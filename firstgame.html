@@ -80,7 +80,7 @@
       let currentPlayer = "X";
       let gameActive = true;
       let gameState = Array(9).fill(null);
-
+      // console.log(gameState);
       const winningCombinations = [
         [0, 1, 2],
         [3, 4, 5],
@@ -94,7 +94,7 @@
 
       // Initialize the board
       function createBoard() {
-        board.innerHTML = "";
+        //board.innerHTML = "";
         gameState = Array(9).fill(null);
         gameActive = true;
         winnerText.textContent = "";
@@ -151,6 +151,12 @@
 
       // Initialize the game
       createBoard();
+
+      // function test() {
+      //   return "debugging";
+      // }
+
+      // console.log("test:", test);
     </script>
   </body>
 </html>
