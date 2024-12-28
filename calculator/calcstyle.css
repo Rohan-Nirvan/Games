@@ -46,7 +46,7 @@ h1 {
 }
 
 .display {
-  width: 1000px;
+  width: 500px;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -74,12 +74,16 @@ h1 {
 }
 
 .add {
-  padding: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 20px;
-  border: 2px solid grey;
+  
+  border: 4px solid black;
   border-radius: 5px;
   background-color: antiquewhite;
-  font-size: 18px;
+  font-size: 50px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -88,7 +92,61 @@ h1 {
 }
 
 .sub {
-  padding: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sub:hover { background-color: whitesmoke
+}
+
+.multiply {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.multiply:hover { background-color: whitesmoke
+}
+
+.divide {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divide:hover { background-color: whitesmoke
+}
+
+/*.percentage {
+  padding: 10px;
   margin-top: 20px;
   border: 2px solid grey;
   border-radius: 5px;
@@ -98,16 +156,87 @@ h1 {
   cursor: pointer;
 }
 
-.sub:hover { background-color: whitesmoke
+.percentage:hover { background-color: whitesmoke
+}*/
+
+.decimal {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.equal {
-  padding: 15px;
+.decimal:hover { background-color: whitesmoke
+}
+
+/*.c {
+  padding: 10px;
   margin-top: 20px;
   border: 2px solid grey;
   border-radius: 5px;
   background-color: antiquewhite;
   font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c:hover { background-color: whitesmoke
+}*/
+
+.bracket-left {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bracket-left:hover { background-color: whitesmoke
+}
+
+.bracket-right {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bracket-right:hover { background-color: whitesmoke
+}
+.equal {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+  border: 4px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  font-size: 50px;
   font-weight: bold;
   cursor: pointer;
 }
