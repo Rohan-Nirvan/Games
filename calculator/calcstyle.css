@@ -36,7 +36,7 @@ h1 {
   align-items: center;
   background-color: #fff;
   border: 2px solid #ccc;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -55,7 +55,7 @@ h1 {
   margin-right: auto;
   background-color: #fff;
   border: 2px solid #ccc;
-  font-size: 100px;
+  font-size: 60px;
   font-weight: bold;
 }
 
