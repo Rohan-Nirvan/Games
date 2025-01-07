@@ -35,7 +35,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  border: 2px solid #ccc; 
+  border: 2px solid #ccc;
   font-size: 100px;
   font-weight: bold;
   cursor: pointer;
@@ -49,28 +49,36 @@ h1 {
   width: 500px;
   height: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
-  border: 2px solid #ccc; 
+  border: 2px solid #ccc;
   font-size: 100px;
   font-weight: bold;
 }
 
-.disp1, .disp2, .disp3, .disp4, .disp5, .disp6, .disp7, .disp8, .disp9, .disp10 {
+.disp1,
+.disp2,
+.disp3,
+.disp4,
+.disp5,
+.disp6,
+.disp7,
+.disp8,
+.disp9,
+.disp10 {
   width: 100px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  border: 2px solid #ccc; 
+  border: 2px solid #ccc;
   font-size: 100px;
   font-weight: bold;
   cursor: pointer;
-
 }
 
 .add {
@@ -79,7 +87,7 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 20px;
-  
+
   border: 4px solid black;
   border-radius: 5px;
   background-color: antiquewhite;
@@ -88,7 +96,8 @@ h1 {
   cursor: pointer;
 }
 
-.add:hover { background-color: whitesmoke
+.add:hover {
+  background-color: whitesmoke;
 }
 
 .sub {
@@ -106,7 +115,8 @@ h1 {
   cursor: pointer;
 }
 
-.sub:hover { background-color: whitesmoke
+.sub:hover {
+  background-color: whitesmoke;
 }
 
 .multiply {
@@ -124,7 +134,8 @@ h1 {
   cursor: pointer;
 }
 
-.multiply:hover { background-color: whitesmoke
+.multiply:hover {
+  background-color: whitesmoke;
 }
 
 .divide {
@@ -142,22 +153,28 @@ h1 {
   cursor: pointer;
 }
 
-.divide:hover { background-color: whitesmoke
+.divide:hover {
+  background-color: whitesmoke;
 }
 
-/*.percentage {
-  padding: 10px;
+.backkey {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 20px;
-  border: 2px solid grey;
+  margin-left: 5px;
+  border: 4px solid black;
   border-radius: 5px;
   background-color: antiquewhite;
-  font-size: 18px;
+  font-size: 50px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.percentage:hover { background-color: whitesmoke
-}*/
+.backkey:hover {
+  background-color: whitesmoke;
+}
 
 .decimal {
   padding-top: 0px;
@@ -174,22 +191,28 @@ h1 {
   cursor: pointer;
 }
 
-.decimal:hover { background-color: whitesmoke
+.decimal:hover {
+  background-color: whitesmoke;
 }
 
-/*.c {
-  padding: 10px;
+.cleardisplay {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 20px;
-  border: 2px solid grey;
+  margin-left: 5px;
+  border: 4px solid black;
   border-radius: 5px;
   background-color: antiquewhite;
-  font-size: 18px;
+  font-size: 50px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.c:hover { background-color: whitesmoke
-}*/
+.c:hover {
+  background-color: whitesmoke;
+}
 
 .bracket-left {
   padding-top: 0px;
@@ -206,7 +229,8 @@ h1 {
   cursor: pointer;
 }
 
-.bracket-left:hover { background-color: whitesmoke
+.bracket-left:hover {
+  background-color: whitesmoke;
 }
 
 .bracket-right {
@@ -224,7 +248,8 @@ h1 {
   cursor: pointer;
 }
 
-.bracket-right:hover { background-color: whitesmoke
+.bracket-right:hover {
+  background-color: whitesmoke;
 }
 .equal {
   padding-top: 0px;
@@ -241,5 +266,6 @@ h1 {
   cursor: pointer;
 }
 
-.equal:hover { background-color: whitesmoke
+.equal:hover {
+  background-color: whitesmoke;
 }
