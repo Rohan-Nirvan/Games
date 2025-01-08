@@ -52,25 +52,25 @@ function handleCellClick(event) {
   console.log("display.innerText:", display.innerText);
 }
 
-addButton.addEventListener("click", displaynew1);
+addButton.addEventListener("click", addchar);
 
-subButton.addEventListener("click", displaynew2);
+subButton.addEventListener("click", subchar);
 
-multiplyButton.addEventListener("click", displaynew3);
+multiplyButton.addEventListener("click", multiplychar);
 
-divideButton.addEventListener("click", displaynew4);
+divideButton.addEventListener("click", dividechar);
 
-backButton.addEventListener("click", displaynew5);
+backButton.addEventListener("click", backfunction);
 
-decimalButton.addEventListener("click", displaynew6);
+decimalButton.addEventListener("click", decimalfunction);
 
-cButton.addEventListener("click", displaynew7);
+cButton.addEventListener("click", cutfunction);
 
-bracketleftButton.addEventListener("click", displaynew8);
+bracketleftButton.addEventListener("click", leftbracket);
 
-bracketrightButton.addEventListener("click", displaynew9);
+bracketrightButton.addEventListener("click", rightbracket);
 
-equalButton.addEventListener("click", displaynew10);
+equalButton.addEventListener("click", checklastchar);
 
 /*function displaynew1(event) {
   display.innerText += addButton.innerText;
@@ -89,7 +89,7 @@ function displaynew4(event) {
 }*/
 
 
-function displaynew5(event) {
+function backfunction(event) {
   display.innerText = display.innerText.slice(0, -1);
 }
 /*
@@ -97,7 +97,7 @@ function displaynew6(event) {
   display.innerText += decimalButton.innerText;
 }*/
 
-function displaynew7(event) {
+function cutfunction(event) {
   display.innerText = "";
 }
 
@@ -147,7 +147,7 @@ function handleCellClick(event) {
   display.innerText += cellValue;
 }
 
-function displaynew1() {
+function addchar() {
   const lastChar = display.innerText.slice(-1);
 
   // Prevent consecutive operators
@@ -156,7 +156,7 @@ function displaynew1() {
   }
 }
 
-function displaynew2() {
+function subchar() {
   const lastChar = display.innerText.slice(-1);
 
   // Prevent consecutive operators
@@ -165,7 +165,7 @@ function displaynew2() {
   }
 }
 
-function displaynew3() {
+function multiplychar() {
   const lastChar = display.innerText.slice(-1);
 
   // Prevent consecutive operators
@@ -174,7 +174,7 @@ function displaynew3() {
   }
 }
 
-function displaynew4() {
+function dividechar() {
   const lastChar = display.innerText.slice(-1);
 
   // Prevent consecutive operators
@@ -183,7 +183,7 @@ function displaynew4() {
   }
 }
 
-function displaynew6() {
+function decimalfunction() {
   const lastChar = display.innerText.slice(-1);
 
   // Prevent multiple decimals in the same number
@@ -193,15 +193,15 @@ function displaynew6() {
   }
 }
 
-function displaynew8() {
+function leftbracket() {
   display.innerText += "(";
 }
 
-function displaynew9() {
+function rightbracket() {
   display.innerText += ")";
 }
 
-function displaynew10() {
+function checklastchar() {
   try {
     // Ensure the input is valid before evaluating
     if (isOperator(display.innerText.slice(-1))) {
