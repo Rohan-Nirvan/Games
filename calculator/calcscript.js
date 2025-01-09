@@ -18,6 +18,8 @@ function createBoard(rows, cols) {
   board.style.gridTemplateColumns = `repeat(${cols}, 100px)`;
   board.style.gridTemplateRows = `repeat(${rows}, 100px)`;
 
+    // Create an array to store the cells
+    // let cells = [];
   // Create cells and append them to the board
   for (let i = 0; i < rows * cols; i++) {
     let cell = document.createElement("div");
@@ -29,12 +31,28 @@ function createBoard(rows, cols) {
     cell.addEventListener("click", handleCellClick);
 
     board.appendChild(cell);
+    // cells.push(cell); // Add each cell to the array
   }
+  //  // Now you can update the cells in the 'cells' array
+  // // Example: Update cell[0] and cell[1] values
+  // cells[0].innerText = 7;  // Update cell at index 0
+  // cells[1].innerText = 8;  // Update cell at index 1
+  
+//   cells[2].innerText = 9;  // Update cell at index 0
+//   cells[3].innerText = 4;  // Update cell at index 1
+//   cells[4].innerText = 5;  // Update cell at index 0
+//   cells[5].innerText = 6;  // Update cell at index 1
+//   cells[6].innerText = 1;  // Update cell at index 0
+//   cells[7].innerText = 2;  // Update cell at index 1
+//   cells[8].innerText = 3;  // Update cell at index 0
+//  // cells[9].innerText = Number00 ;  // Update cell at index 1
+//   cells[10].innerText = 0;  // Update cell at index 1
+//   //cells[11].innerText = .;  // Update cell at index 1
 }
 
 // Initialize board
 const rows = 2,
-  cols =5; // You can change these values
+  cols = 5; // You can change these values
 createBoard(rows, cols);
 
 function handleCellClick(event) {
@@ -186,6 +204,8 @@ function handleCellClick(event) {
 
   // Prevent consecutive operators
   if (isOperator(cellValue) && isOperator(lastChar)) {
+     display.innerText.splice(-1);
+     display.innerText += cellValue;
     return;
   }
 
@@ -199,19 +219,24 @@ function handleCellClick(event) {
 }
 
 function addchar() {
+
+  //display.innerText += "+";
   const lastChar = display.innerText.slice(-1);
 
   // Prevent consecutive operators
-  if (!isOperator(lastChar)) {
-    display.innerText += "+";
+  if (isOperator(lastChar)) {
+    display.innerText = display.innerText.slice(0, -1) + "+";
+  } else { display.innerText += "+";
   }
 }
-
+ 
 function subchar() {
   const lastChar = display.innerText.slice(-1);
 
   // Prevent consecutive operators
-  if (!isOperator(lastChar)) {
+  if (isOperator(lastChar)) {
+    display.innerText = display.innerText.slice(0, -1) + "-";
+  } else {
     display.innerText += "-";
   }
 }
@@ -220,8 +245,9 @@ function multiplychar() {
   const lastChar = display.innerText.slice(-1);
 
   // Prevent consecutive operators
-  if (!isOperator(lastChar)) {
-    display.innerText += "*";
+  if (isOperator(lastChar)) {
+    display.innerText = display.innerText.slice(0, -1) + "*";
+  } else {display.innerText += "*";
   }
 }
 
@@ -229,8 +255,9 @@ function dividechar() {
   const lastChar = display.innerText.slice(-1);
 
   // Prevent consecutive operators
-  if (!isOperator(lastChar)) {
-    display.innerText += "/";
+  if (isOperator(lastChar)) {
+    display.innerText = display.innerText.slice(0, -1) + "/";
+  } else {display.innerText += "/";
   }
 }
 
@@ -245,10 +272,16 @@ function decimalfunction() {
 }
 
 function leftbracket() {
-  display.innerText += "(";
+  const lastChar = display.innerText.slice(-1);
+  if ("0123456789".includes(lastChar) ){
+  display.innerText += "*(";}
+else {
+  display.innerText += "("; // Just add the left bracket
+}
 }
 
 function rightbracket() {
+  const lastChar = display.innerText.slice(-1);
   display.innerText += ")";
 }
 
