@@ -34,7 +34,7 @@ function createBoard(rows, cols) {
 
 // Initialize board
 const rows = 2,
-  cols = 5; // You can change these values
+  cols =5; // You can change these values
 createBoard(rows, cols);
 
 function handleCellClick(event) {
@@ -53,8 +53,19 @@ function handleCellClick(event) {
 }
 
 addButton.addEventListener("click", addchar);
+// Listen for keypresses globally
+// addButton.addEventListener("keydown", (event) => {
+//   if (event.key === "+") { // For example, handle the add key
+//     addchar();
+//   }
+// });
 
 subButton.addEventListener("click", subchar);
+// subButton.addEventListener("keydown", (event) => {
+//   if (event.key === "-") { // For example, handle the sub key
+//     addchar();
+//   }
+// });
 
 multiplyButton.addEventListener("click", multiplychar);
 
@@ -71,6 +82,46 @@ bracketleftButton.addEventListener("click", leftbracket);
 bracketrightButton.addEventListener("click", rightbracket);
 
 equalButton.addEventListener("click", checklastchar);
+
+
+
+// document.addEventListener('keydown', function(e){
+//   console.log(e.key);
+//   if ( e.key === '+'){ addchar();
+//   }
+//   if ( e.key === '-'){subchar();
+//   }
+//   if ( e.key === '*'){multiplychar();
+//   }
+//   if ( e.key === '/'){dividechar();
+//   }
+// })
+document.addEventListener('keydown', function(e){
+  console.log(e.key);
+  if (e.key === '0') {display.innerText += 0;}
+  
+  if (e.key === '1') {display.innerText += 1;}
+  if (e.key === '2') {display.innerText += 2;}
+  if (e.key === '3') {display.innerText += 3;}
+  if (e.key === '4') {display.innerText += 4;}
+  if (e.key === '5') {display.innerText += 5;}
+  if (e.key === '6') {display.innerText += 6;}
+  if (e.key === '7') {display.innerText += 7;}
+  if (e.key === '8') {display.innerText += 8;}
+  
+  if (e.key === '9') {display.innerText += 9;}
+  if (e.key === '+') { addchar(); } // Call addchar() function
+  if (e.key === '-') { subchar(); } // Call subchar() function
+  if (e.key === '*') { multiplychar(); } // Call multiplychar() function
+  if (e.key === '/') { dividechar(); } // Call dividechar() function
+  if (e.key === 'Backspace') { backfunction(); } // Call backfunction() on backspace key
+  if (e.key === 'c') { cutfunction(); } // Call cutfunction() on 'c' key (clear display)
+  if (e.key === '.') { decimalfunction(); } // Call decimalfunction() on '.' key
+  if (e.key === '(') { leftbracket(); } // Call leftbracket() on '(' key
+  if (e.key === ')') { rightbracket(); } // Call rightbracket() on ')' key
+  if (e.key === 'Enter') { checklastchar(); } // Call checklastchar() on Enter key (equal)
+});
+
 
 /*function displaynew1(event) {
   display.innerText += addButton.innerText;
