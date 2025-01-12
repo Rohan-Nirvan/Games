@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="querie.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="small-display">
+        <div class="main-border">
+          <div class="display" id="sdisplay"></div>
+
+          <div class="main-board">
+            <div class="board">
+              <div class="number-board">
+                <div>
+                  <button class="cell" id="button7">7</button>
+                  <button class="cell" id="button8">8</button>
+                  <button class="cell" id="button9">9</button>
+                </div>
+                <div>
+                  <button class="cell" id="button4">4</button>
+                  <button class="cell" id="button5">5</button>
+                  <button class="cell" id="button6">6</button>
+                </div>
+                <div>
+                  <button class="cell" id="button1">1</button>
+                  <button class="cell" id="button2">2</button>
+                  <button class="cell" id="button3">3</button>
+                </div>
+                <div>
+                  <button class="cell" id="button00">00</button>
+                  <button class="cell" id="button0">0</button>
+                  <button class="cell dot" id="decimal">.</button>
+                </div>
+              </div>
+
+              <div class="operator-1-board">
+                <button class="cell" id="add">+</button>
+                <button class="cell" id="sub">-</button>
+                <button class="cell" id="multiply">*</button>
+                <button class="cell" id="divide">/</button>
+              </div>
+            </div>
+
+            <div class="operator-2-board">
+              <button class="cell" id="bracket-left">(</button>
+              <button class="cell" id="bracket-right">)</button>
+              <button class="cell" id="backkey">←</button>
+              <button class="cell" id="cleardisplay">C</button>
+            </div>
+
+            <div class="equal">
+              <button class="cal-name">Calculator</button>
+              <button class="equal-btn" id="equalbt">=</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="large-display">
+        <div class="main-border">
+          <div class="display" id="ldisplay"></div>
+
+          <div class="main-board">
+            <div class="board">
+              <div class="number-board">
+                <div>
+                  <button class="cell" id="lbutton7">7</button>
+                  <button class="cell" id="lbutton8">8</button>
+                  <button class="cell" id="lbutton9">9</button>
+                </div>
+                <div>
+                  <button class="cell" id="lbutton4">4</button>
+                  <button class="cell" id="lbutton5">5</button>
+                  <button class="cell" id="lbutton6">6</button>
+                </div>
+                <div>
+                  <button class="cell" id="lbutton1">1</button>
+                  <button class="cell" id="lbutton2">2</button>
+                  <button class="cell" id="lbutton3">3</button>
+                </div>
+                <div>
+                  <button class="cell" id="lbutton00">00</button>
+                  <button class="cell" id="lbutton0">0</button>
+                  <button class="cell dot" id="ldecimal">.</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="mm-board">
+              <div class="operator-1-board">
+                <button class="cell" id="ladd">+</button>
+                <button class="cell" id="lsub">-</button>
+                <button class="cell" id="lmultiply">*</button>
+                <button class="cell" id="ldivide">/</button>
+              </div>
+              <div class="operator-2-board">
+                <button class="cell" id="lcleardisplay">C</button>
+                <button class="cell back" id="lbackkey">←</button>
+                <button class="cell" id="lbracket-left">(</button>
+                <button class="cell" id="lbracket-right">)</button>
+              </div>
+            </div>
+          </div>
+          <div class="equal-l-d">
+            <button class="cal-name">Calculator</button>
+            <button class="equal-btn" id="lequalbt">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="calcscript.js"></script>
+  </body>
+</html>

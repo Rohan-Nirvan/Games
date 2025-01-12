@@ -1,0 +1,77 @@
+@media (min-width: 500px) {
+  .display {
+    width: 455px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+}
+
+@media (max-width: 501px) {
+  .larg-display {
+    display: none;
+  }
+}
+
+@media (min-width: 501px) {
+  .small-display {
+    display: none;
+  }
+
+  .number-board {
+    gap: 20px;
+  }
+
+  .number-board div {
+    gap: 15px;
+  }
+
+  .operator-1-board {
+    gap: 20px;
+  }
+
+  .operator-2-board {
+    flex-direction: column;
+    margin: 0px;
+    gap: 20px;
+  }
+
+  .mm-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+  }
+
+  .main-board {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .equal-l-d {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 39px;
+  }
+
+  .cal-name {
+    width: 200px;
+    height: 45px;
+    background-color: transparent;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+
+  .equal-btn {
+    width: 120px;
+    height: 45px;
+    background-color: transparent;
+    font-size: 30px;
+    border-radius: 10px;
+  }
+}
